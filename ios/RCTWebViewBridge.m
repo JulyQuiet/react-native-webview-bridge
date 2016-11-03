@@ -61,7 +61,7 @@ NSString *const RCTWebViewBridgeSchema = @"wvb";
 {
   if ((self = [super initWithFrame:frame])) {
     super.backgroundColor = [UIColor clearColor];
-    _automaticallyAdjustContentInsets = YES;
+    _automaticallyAdjustContentInsets = NO;
     _contentInset = UIEdgeInsetsZero;
     _webView = [[UIWebView alloc] initWithFrame:self.bounds];
     _webView.delegate = self;

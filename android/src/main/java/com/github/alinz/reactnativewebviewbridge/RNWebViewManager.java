@@ -46,11 +46,11 @@ public class RNWebViewManager extends SimpleViewManager<RNWebView> {
     }
     
     static private void evaluateJavascript(RNWebView root, String javascript) {
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.KITKAT) {
-            root.evaluateJavascript(javascript, null);
-        } else {
+//        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.KITKAT) {
+//            root.evaluateJavascript(javascript, null);
+//        } else {
             root.loadUrl("javascript:" + javascript);
-        }
+//        }
     }
     
     @ReactProp(name = "allowFileAccessFromFileURLs")
